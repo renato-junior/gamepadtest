@@ -78,6 +78,8 @@ function updateStatus() {
       b.style.backgroundSize = pct + " " + pct;
       if (pressed) {
         b.className = "button pressed";
+        var audio = new Audio('alert.wav');
+        audio.play();
       } else {
         b.className = "button";
       }
